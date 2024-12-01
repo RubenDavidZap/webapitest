@@ -6,9 +6,9 @@ namespace webapitest.Domain.Interfaces
     {
         Task<IEnumerable<Country>> GetCountryAsync();
 
-        Task<Country> CreateCountryAsync(Country country);
-
         Task<Country> GetCountryByIdAsync(Guid Id);
+
+        Task<Country> CreateCountryAsync(Country country);        
 
         Task<Country> EditCountryAsync(Country country);
 
